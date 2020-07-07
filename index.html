@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Selction Sort</title>
+        <link rel="stylesheet" href="selectionSort.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <style>
+            body {
+                font-family: 'Lato';
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-container">
+            <h1>Selection Sort Visulization</h1>
+            <button id="array-generate">Generate Array</button>
+            <button id="toggle-btn">Start</button>
+            <p id="array-length">Array Length: <span id="array-number">0</span></p>
+            <p id="timer">Time: <span id="time">00 : 00 . 000</span></p>
+            <div id="canvas-container">
+                <canvas></canvas>
+            </div>
+            <!--
+            <div id="main-algo">
+                <div id="overlay-algo">
+                    <h3>Want to see the interesting algorithm that works behinf the scene? Hover Over Me</h3>
+                </div>
+                <div id="algo">
+                    <pre>
+                        <code>
+                            for(let i = 0; i < array.length - 1; i++) {
+                                let pos = i;
+                                for(let j = i + 1; j < array.length; j++) {
+                                    if(array[pos] > array[j]) {
+                                        pos = j;
+                                    }
+                                }
+                                let temp = array[i];
+                                array[i] = array[pos];
+                                array[pos] = temp;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        -->
+            <div class="slidecontainer">
+                <input type="range" min="10" max="100" value="60" class="slider" id="range-value">
+              </div>
+            <p id="para-copyright">&copy; SARNAVO SARKAR PRODUCTION</p>
+        </div>
+        <script src="selectionSort.js"></script>
+    </body>
+</html>
